@@ -17,7 +17,7 @@ const my3FavoriteTVShows = ["GOT", "TBBT", "The Office"];
 const sentence = `Minhas 3 séries favoritas são: ${my3FavoriteTVShows.join(
   ", "
 )}.`.replace(", The", " e The");
-// console.log(sentence);
+console.log(sentence);
 
 /*
   02 - Comente o console.log() acima e:
@@ -26,7 +26,7 @@ const sentence = `Minhas 3 séries favoritas são: ${my3FavoriteTVShows.join(
     possui 3 itens.
 */
 
-// console.log(my3FavoriteTVShows.length == 3)
+console.log(my3FavoriteTVShows.length == 3)
 
 /*
   03 - Comente o console.log() acima e:
@@ -40,7 +40,7 @@ const sentence = `Minhas 3 séries favoritas são: ${my3FavoriteTVShows.join(
 
 const randomTVShow = "Watchmen";
 const isRandomTVShowIncluded = my3FavoriteTVShows.includes(randomTVShow);
-// console.log(isRandomTVShowIncluded)
+console.log(isRandomTVShowIncluded)
 
 /*
   04 - Comente o console.log() acima e:
@@ -54,7 +54,7 @@ const isRandomTVShowIncluded = my3FavoriteTVShows.includes(randomTVShow);
 */
 const typeSentence = `O tipo de dado que a const "isRandomTVShowIncluded" armazena é: ${typeof isRandomTVShowIncluded} .`;
 
-// console.log(typeSentence)
+console.log(typeSentence)
 
 /*
   05 - Comente o console.log() acima e:
@@ -70,6 +70,9 @@ const typeSentence = `O tipo de dado que a const "isRandomTVShowIncluded" armaze
   caracteres? BOOLEAN."
 */
 
+const number = 39;
+console.log(`A string que a "typeSentence" armazena tem mais de ${number} caracteres? ${String(typeSentence.length > number).replace('t', 'T')}.`)
+
 /*
   06 - Comente o console.log() acima e:
 
@@ -81,6 +84,7 @@ const typeSentence = `O tipo de dado que a const "isRandomTVShowIncluded" armaze
 */
 
 const falsyValues = [0, "", false, "", ``, null, undefined, NaN];
+console.log(`Todos os ${falsyValues.length} itens do array "falsyValues" são falsy. Inclusive o ${falsyValues[2]}`)
 
 /*
   07 - Comente o console.log() acima e:
@@ -89,8 +93,12 @@ const falsyValues = [0, "", false, "", ``, null, undefined, NaN];
   - Armazene em uma constante "crazyConversion" a conversão da "crazyOperation"  
     em boolean.
   - Você sabe por que essa conversão resultou em true?
+  //RESPOSTA: quando executamos alguma operaçao matematica com null ele é interpretado como 0 (zero)
 */
 
+const crazyOperation = null + 1;
+const crazyConversion = Boolean(crazyOperation);
+console.log(crazyConversion)
 /*
   08 - Comente o console.log() acima e:
 
@@ -104,6 +112,12 @@ const falsyValues = [0, "", false, "", ``, null, undefined, NaN];
   é: BOOLEAN."
 */
 
+const ages = [31, 82, 61, 11];
+const agesSum = ages[0] + ages[2];
+
+console.log(`A soma entre o 1º e o 3º item de "ages" é menor ou igual a 92. Essa afirmação
+  é: ${agesSum <= 92}.`)
+
 /*
   09 - Comente o console.log() acima e:
 
@@ -112,6 +126,9 @@ const falsyValues = [0, "", false, "", ``, null, undefined, NaN];
   - Essa expressão deve resultar em false.
   - Exiba a "isNotAString" no console.
 */
+
+const isNotAString = typeof randomTVShow !== "string";
+console.log(isNotAString)
 
 /*
   10 - Comente o console.log() acima e:
@@ -122,3 +139,4 @@ const falsyValues = [0, "", false, "", ``, null, undefined, NaN];
 */
 
 const evenNumbers = [0, 2, 4, 6, 8, 10];
+console.log(evenNumbers.indexOf(8) !== -1);
