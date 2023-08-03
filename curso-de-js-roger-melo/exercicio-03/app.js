@@ -76,7 +76,7 @@ let dogNames = maleDogNames.concat(femaleDogNames);
 - O resultado deve ser: "nome1, nome2, nome3, nome4".
 */
 
-// console.log(dogNames.join(", "));
+console.log(dogNames.join(", "));
 
 /*
 08 - Comente o console.log acima e:
@@ -91,7 +91,7 @@ utilizando o método adequado para isso;
 agora é "Lilica".
 */
 dogNames.pop();
-// console.log(dogNames[dogNames.length - 1]);
+console.log(dogNames[dogNames.length - 1]);
 
 /*
 09 - Comente o console.log acima e:
@@ -106,8 +106,8 @@ apenas as letras iniciais dos nomes do array "dogNames";
 */
 dogNames.push("Nina");
 const initials = `${dogNames[0][0]}${dogNames[1][0]}${dogNames[2][0]}${dogNames[3][0]}`;
-// console.log(dogNames);
-// console.log(initials);
+console.log(dogNames);
+console.log(initials);
 
 /*
 10 - Comente o console.log acima e:
@@ -116,7 +116,7 @@ const initials = `${dogNames[0][0]}${dogNames[1][0]}${dogNames[2][0]}${dogNames[
 - Utilize o método adequado para isso.
 */
 
-// console.log(initials.toLowerCase());
+console.log(initials.toLowerCase());
 
 /*
 11 - Comente o console.log acima e:
@@ -137,7 +137,7 @@ constante que você criou.
 const dessert = `${dogNames[0].slice(3)}${dogNames[1].slice(2)}${dogNames[3]
   .slice(2)
   .replace("n", "d")}`;
-// console.log(`A ${dessert} é um doce à base de coco, tradicional na América Latina e em Angola.`);
+console.log(`A ${dessert} é um doce à base de coco, tradicional na América Latina e em Angola.`);
 
 /*
 12 - Comente o console.log acima e:
@@ -153,4 +153,4 @@ já tem, mais 4;
 */
 let oddNumber = [3, 5, 7];
 oddNumber[1] = oddNumber[1] + 4;
-// console.log(oddNumber[1] = oddNumber[1] ** 3);
+console.log(oddNumber[1] = oddNumber[1] ** 3);

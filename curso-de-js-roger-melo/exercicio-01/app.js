@@ -24,12 +24,12 @@ Como mencionei durante a aula: não se preocupe em entender 100% o que os comand
 Utilize os espaços entre os comentários abaixo para executar os códigos dos 
 exercícios. Inclusive o alert mencionado acima.
 */
-// alert("JS is Awesome!");
+alert("JS is Awesome!");
 
 /*
 04 - Comente o alert que você escreveu acima, utilizando o comentário de uma linha.
 */
-
+// alert("JS is Awesome!");
 /*
 05 - Declare uma const "myBirthYear", que recebe o ano do seu nascimento, com 4  
 dígitos. Ex.: 1930.

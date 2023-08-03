@@ -14,9 +14,10 @@
 */
 
 const my3FavoriteTVShows = ["GOT", "TBBT", "The Office"];
-const sentence = `Minhas 3 séries favoritas são: ${my3FavoriteTVShows.join(", ")}`;
-console.log(sentence);
-
+const sentence = `Minhas 3 séries favoritas são: ${my3FavoriteTVShows.join(
+  ", "
+)}.`.replace(", The", " e The");
+// console.log(sentence);
 
 /*
   02 - Comente o console.log() acima e:
@@ -25,7 +26,7 @@ console.log(sentence);
     possui 3 itens.
 */
 
-
+// console.log(my3FavoriteTVShows.length == 3)
 
 /*
   03 - Comente o console.log() acima e:
@@ -37,7 +38,9 @@ console.log(sentence);
   - Exiba no console o boolean que a "isRandomTVShowIncluded" recebeu.
 */
 
-const randomTVShow = 'Watchmen'
+const randomTVShow = "Watchmen";
+const isRandomTVShowIncluded = my3FavoriteTVShows.includes(randomTVShow);
+// console.log(isRandomTVShowIncluded)
 
 /*
   04 - Comente o console.log() acima e:
@@ -49,8 +52,9 @@ const randomTVShow = 'Watchmen'
 
   "O tipo de dado que a const "isRandomTVShowIncluded" armazena é: TIPO_DE_DADO."
 */
+const typeSentence = `O tipo de dado que a const "isRandomTVShowIncluded" armazena é: ${typeof isRandomTVShowIncluded} .`;
 
-
+// console.log(typeSentence)
 
 /*
   05 - Comente o console.log() acima e:
@@ -66,8 +70,6 @@ const randomTVShow = 'Watchmen'
   caracteres? BOOLEAN."
 */
 
-
-
 /*
   06 - Comente o console.log() acima e:
 
@@ -78,7 +80,7 @@ const randomTVShow = 'Watchmen'
   BOOLEAN."
 */
 
-const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
+const falsyValues = [0, "", false, "", ``, null, undefined, NaN];
 
 /*
   07 - Comente o console.log() acima e:
@@ -88,8 +90,6 @@ const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
     em boolean.
   - Você sabe por que essa conversão resultou em true?
 */
-
-
 
 /*
   08 - Comente o console.log() acima e:
@@ -104,8 +104,6 @@ const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
   é: BOOLEAN."
 */
 
-
-
 /*
   09 - Comente o console.log() acima e:
 
@@ -115,8 +113,6 @@ const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
   - Exiba a "isNotAString" no console.
 */
 
-
-
 /*
   10 - Comente o console.log() acima e:
 
@@ -125,4 +121,4 @@ const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
   - Não utilize o método includes desta vez.
 */
 
-const evenNumbers = [0, 2, 4, 6, 8, 10]
+const evenNumbers = [0, 2, 4, 6, 8, 10];
