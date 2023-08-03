@@ -21,7 +21,9 @@
     5
 */
 
-
+for(let i = 0; i < 6; i++){
+  console.log(i)
+}
 
 /*
   02 - Comente a declaração da let e o loop acima e:
