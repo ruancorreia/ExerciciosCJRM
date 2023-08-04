@@ -18,7 +18,7 @@
 Utilize os espaços entre os comentários abaixo para executar os códigos dos exercícios. Inclusive este.
 */
 
-console.log("Grandes poderes trazem grandes responsabilidades.")
+console.log("Grandes poderes trazem grandes responsabilidades.");
 
 /*
 04 - Comente o console.log acima, e:
@@ -36,7 +36,7 @@ const secondTom = "Cruise";
 
 const myFavoriteTom = tom + " " + firstTom;
 
-console.log(myFavoriteTom)
+console.log(myFavoriteTom);
 
 /*
 05 - Comente o console.log acima, e:
@@ -51,7 +51,7 @@ const programmingLanguage = "Javascript";
 
 const js = programmingLanguage[0] + programmingLanguage[4];
 
-console.log(js)
+console.log(js);
 
 /*
 06 - Comente o console.log acima, e,
@@ -65,7 +65,7 @@ const mozilla = "Mozilla Developer Network";
 
 const mdn = mozilla[0] + mozilla[8] + mozilla[18];
 
-console.log(mdn)
+console.log(mdn);
 
 /*
 07 - Comente o console.log acima, e,
@@ -73,7 +73,7 @@ console.log(mdn)
 - Exiba no console do browser a quantidade de caracteres que a constante "programmingLanguage" possui;
 */
 
-console.log(programmingLanguage.length)
+console.log(programmingLanguage.length);
 
 /*
 08 - Comente o console.log acima, e,
@@ -85,7 +85,7 @@ console.log(programmingLanguage.length)
 
 let randomWord = "Araponga";
 
-console.log(randomWord[randomWord.length - 1])
+console.log(randomWord[randomWord.length - 1]);
 
 /*
 09 - Comente o console.log acima, e,
@@ -97,7 +97,7 @@ console.log(randomWord[randomWord.length - 1])
 
 const summerMessage = "O VERÃO CHEGA NESTE FIM DE SEMANA";
 
-console.log(summerMessage.toLowerCase())
+console.log(summerMessage.toLowerCase());
 
 /*
 10 - Comente o console.log acima, e,
@@ -109,7 +109,7 @@ console.log(summerMessage.toLowerCase())
 
 const winterMessage = "o inverno está chegando";
 
-console.log(winterMessage.toUpperCase())
+console.log(winterMessage.toUpperCase());
 
 /*
 11 - Comente o console.log acima, e,
@@ -117,7 +117,7 @@ console.log(winterMessage.toUpperCase())
 - Exiba, no console, o index do caractere "v" da "winterMessage";
 */
 
-console.log(winterMessage.indexOf('v'))
+console.log(winterMessage.indexOf("v"));
 
 /*
 12 - Comente o console.log acima, e,
@@ -145,6 +145,8 @@ const harryPotterAuthor = "J.K. Rowling";
 */
 
 const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!';
+const realBestMovie = bestMovie.replace("La la land", "Moonlight");
+console.log(realBestMovie);
 
 /*
 15 - Comente o console.log acima, e,
@@ -152,7 +154,9 @@ const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!';
 - Abaixo deste comentário, armazene o resto de 10 dividido por 3 em uma constante "reminder";
 - Exiba a reminder no console. O resultado deve ser 1;
 */
+const reminder = 10 % 3;
 
+console.log(reminder);
 /*
 16 - Comente o console.log acima, e,
 
@@ -162,6 +166,8 @@ const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!';
 */
 
 let episodes = 6;
+episodes++;
+console.log(episodes);
 
 /*
 17 - Comente o console.log acima, e,
@@ -170,14 +176,16 @@ let episodes = 6;
 - Após o decremento, exiba a let "episodes" no console;
 - O valor exibido no console deve ser 6.
 */
-
+episodes--;
+console.log(episodes);
 /*
 18 - Comente o console.log acima, e,
 
 - Utilize o operador addition assignment para atualizar o valor da let "episodes" para 10;
 - Após a atribuição, exiba a let "episodes" no console.
 */
-
+episodes = +10;
+console.log(episodes);
 /*
 19 - Comente o console.log acima, e,
 
@@ -185,7 +193,9 @@ let episodes = 6;
 - Insira a let "episodes" no lugar de "NUMERO_DE_EPISÓDIOS";
 - Exiba a "allEpisodes" no console.
 */
+const allEpisodes = `O n° de episodios e ${episodes} `;
 
+console.log(allEpisodes);
 /*
 20 - Comente o console.log acima, e,
 
@@ -195,7 +205,8 @@ let episodes = 6;
 - Não use template strings.
 */
 
-// const bookMessage = ''O Conto da Aia' é um dos livros mais vendidos da década.'
+const bookMessage = "'O Conto da Aia' é um dos livros mais vendidos da década.";
+console.log(bookMessage);
 
 /*
 21 - Comente o console.log acima (e a const bookMessage caso não tenha descoberto a resolução), e,
@@ -209,7 +220,14 @@ let episodes = 6;
 */
 
 const name = "walter white";
+let newName =
+  name[0].toUpperCase() +
+  name.slice(1, 6) +
+  " " +
+  name[7].toUpperCase() +
+  name.slice(8);
 
+console.log(newName);
 /*
 22 - Comente o console.log acima, e,
 
@@ -219,3 +237,13 @@ const name = "walter white";
 - Não modifique a string da const "name";
 - Exiba a "newName" no console;
 */
+
+newName = `${
+  name[0].toUpperCase() +
+  name.slice(1, 6) +
+  " " +
+  name[7].toUpperCase() +
+  name.slice(8)
+}`;
+
+console.log(newName);
