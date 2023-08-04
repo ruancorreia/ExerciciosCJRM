@@ -18,7 +18,7 @@
 Utilize os espaços entre os comentários abaixo para executar os códigos dos exercícios. Inclusive este.
 */
 
-
+console.log("Grandes poderes trazem grandes responsabilidades.")
 
 /*
 04 - Comente o console.log acima, e:
@@ -30,7 +30,13 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 - Exiba a "myFavoriteTom" no console do browser.
 */
 
+const tom = "Tom";
+const firstTom = "Hanks";
+const secondTom = "Cruise";
 
+const myFavoriteTom = tom + " " + firstTom;
+
+console.log(myFavoriteTom)
 
 /*
 05 - Comente o console.log acima, e:
@@ -41,7 +47,11 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 - Exiba a "js" no console do browser;
 */
 
+const programmingLanguage = "Javascript";
 
+const js = programmingLanguage[0] + programmingLanguage[4];
+
+console.log(js)
 
 /*
 06 - Comente o console.log acima, e,
@@ -51,6 +61,11 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 - Exiba a "mdn" no console do browser;
 */
 
+const mozilla = "Mozilla Developer Network";
+
+const mdn = mozilla[0] + mozilla[8] + mozilla[18];
+
+console.log(mdn)
 
 /*
 07 - Comente o console.log acima, e,
@@ -58,7 +73,7 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 - Exiba no console do browser a quantidade de caracteres que a constante "programmingLanguage" possui;
 */
 
-
+console.log(programmingLanguage.length)
 
 /*
 08 - Comente o console.log acima, e,
@@ -68,8 +83,9 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 - Dica: utilize a propriedade ".length".
 */
 
-let randomWord = 'Araponga';
+let randomWord = "Araponga";
 
+console.log(randomWord[randomWord.length - 1])
 
 /*
 09 - Comente o console.log acima, e,
@@ -79,8 +95,9 @@ let randomWord = 'Araponga';
 - Não digite a nova string manualmente.
 */
 
-const summerMessage = 'O VERÃO CHEGA NESTE FIM DE SEMANA'
+const summerMessage = "O VERÃO CHEGA NESTE FIM DE SEMANA";
 
+console.log(summerMessage.toLowerCase())
 
 /*
 10 - Comente o console.log acima, e,
@@ -90,8 +107,9 @@ const summerMessage = 'O VERÃO CHEGA NESTE FIM DE SEMANA'
 - Não digite a nova string manualmente.
 */
 
-const winterMessage = 'o inverno está chegando'
+const winterMessage = "o inverno está chegando";
 
+console.log(winterMessage.toUpperCase())
 
 /*
 11 - Comente o console.log acima, e,
@@ -99,7 +117,7 @@ const winterMessage = 'o inverno está chegando'
 - Exiba, no console, o index do caractere "v" da "winterMessage";
 */
 
-
+console.log(winterMessage.indexOf('v'))
 
 /*
 12 - Comente o console.log acima, e,
@@ -107,7 +125,7 @@ const winterMessage = 'o inverno está chegando'
 - Exiba, no console, o index da última ocorrência do caractere "n" da "winterMessage".
 */
 
-
+console.log(winterMessage.lastIndexOf("n"));
 
 /*
 13 - Comente o console.log acima, e,
@@ -116,7 +134,7 @@ const winterMessage = 'o inverno está chegando'
 - Não digite a string "J.K." manualmente;
 */
 
-const harryPotterAuthor = 'J.K. Rowling'
+const harryPotterAuthor = "J.K. Rowling";
 
 /*
 14 - Comente o console.log acima, e,
@@ -126,8 +144,7 @@ const harryPotterAuthor = 'J.K. Rowling'
 - Exiba a "realBestMovie" no console.
 */
 
-const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!'
-
+const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!';
 
 /*
 15 - Comente o console.log acima, e,
@@ -135,9 +152,6 @@ const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!'
 - Abaixo deste comentário, armazene o resto de 10 dividido por 3 em uma constante "reminder";
 - Exiba a reminder no console. O resultado deve ser 1;
 */
-
-
-
 
 /*
 16 - Comente o console.log acima, e,
@@ -147,8 +161,7 @@ const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!'
 - O valor exibido no console deve ser 7.
 */
 
-let episodes = 6
-
+let episodes = 6;
 
 /*
 17 - Comente o console.log acima, e,
@@ -158,16 +171,12 @@ let episodes = 6
 - O valor exibido no console deve ser 6.
 */
 
-
 /*
 18 - Comente o console.log acima, e,
 
 - Utilize o operador addition assignment para atualizar o valor da let "episodes" para 10;
 - Após a atribuição, exiba a let "episodes" no console.
 */
-
-
-
 
 /*
 19 - Comente o console.log acima, e,
@@ -177,9 +186,6 @@ let episodes = 6
 - Exiba a "allEpisodes" no console.
 */
 
-
-
-
 /*
 20 - Comente o console.log acima, e,
 
@@ -188,9 +194,8 @@ let episodes = 6
 - Não modifique nenhuma aspas da string para aspas duplas.
 - Não use template strings.
 */
- 
-// const bookMessage = ''O Conto da Aia' é um dos livros mais vendidos da década.' 
 
+// const bookMessage = ''O Conto da Aia' é um dos livros mais vendidos da década.'
 
 /*
 21 - Comente o console.log acima (e a const bookMessage caso não tenha descoberto a resolução), e,
@@ -203,8 +208,7 @@ let episodes = 6
 - Exiba a "newName" no console;
 */
 
-const name = 'walter white'
-
+const name = "walter white";
 
 /*
 22 - Comente o console.log acima, e,
@@ -215,4 +219,3 @@ const name = 'walter white'
 - Não modifique a string da const "name";
 - Exiba a "newName" no console;
 */
-
